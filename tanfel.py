@@ -73,3 +73,12 @@ def megszamoltanarok(tanarok):
     return len(tanarokEgyedi)
 
 print(f"Az iskolában {megszamoltanarok(tanarok)} tanár tanít")
+
+
+tantargyak_nevei={"tantargyak.txt"} 
+egyedi_tantargyak = set(tantargyak)
+
+with open("tantargyak_nevei","w",encoding="UTF-8")as falj:
+    for tantargy in egyedi_tantargyak:
+        falj.write(tantargy+"\n")
+        
